@@ -1,0 +1,106 @@
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container h1{
+    text-align: center;
+    color: #444;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    font-size: 40px;
+}
+
+.wrapper .text-input{
+    height: 50px;
+    width: 300px;
+}
+
+.wrapper .button{
+    width: 100px;
+    height: 55px;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .button:hover{
+    background-color: rgb(231, 154, 10);
+}
+
+.wrapper .delete-selected-button{
+    background-color: red;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 55px;
+    cursor: pointer;
+    margin-left: 2rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .delete-selected-button:hover{
+    background-color: rgb(204, 7, 7);
+}
+
+.wrapper .delete-all-button{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin-left: 2rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .delete-all-button:hover{
+    background-color: rgb(43, 42, 42);
+}
+
+.list-wrapper{
+    margin-top: 2rem;
+}
+
+#myList li{
+    background-color: #f6f6f6;
+    padding: 20px;
+    position: relative;
+}
+
+#myList li span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    bottom: 11px;
+}
+
+#myList li.checked{
+    background-color: red !important;
+    color: #fff;
+    text-decoration: line-through;
+}
+
