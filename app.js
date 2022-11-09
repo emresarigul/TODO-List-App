@@ -6,7 +6,8 @@ const deleteAllButton = document.querySelector(".delete-all-button");
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
-  if (todoText.value !== "") {
+  console.log(todoText.value);
+  if (todoText.value.trim() !== "") {
     const closeBtn = document.createElement("span");
     const newListItem = document.createElement("li");
     newListItem.classList = "list-group-item";
